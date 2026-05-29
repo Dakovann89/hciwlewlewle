@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamma Mia Order</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Inria+Serif:wght@300;400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+<div class="page-wrapper">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-brand">
+        <img src="logo.png" alt="Logo" class="navbar-logo">
+        <span class="navbar-title">Mamma Mia</span>
+      </div>
+      <nav class="navbar-links">
+        <a href="index.html"   class="nav-link">Home</a>
+        <a href="menu.html"    class="nav-link">Menu</a>
+        <a href="rewards.html" class="nav-link">Rewards</a>
+        <a href="about.html"   class="nav-link">About Us</a>
+        <a href="order.html"   class="nav-btn">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Place Your Order</h1>
+    <p>Authentic Italian food made with passion.</p>
+  </section>
+
+  <!-- FORM -->
+  <section class="form-section">
+    <form id="orderForm">
+
+      <!-- NAME -->
+      <div class="group">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Your name">
+        <span class="error-msg" id="nameError"></span>
+      </div>
+
+      <!-- PHONE -->
+      <div class="group">
+        <label>Phone Number</label>
+        <input type="text" id="phone" placeholder="8–10 digits">
+        <span class="error-msg" id="phoneError"></span>
+      </div>
+
+      <!-- MENU -->
+      <div class="group">
+        <label>Choose Menu</label>
+        <div class="buttons">
+          <button type="button" class="menuBtn" data-type="pizza">Pizza</button>
+          <button type="button" class="menuBtn" data-type="pasta">Pasta</button>
+          <button type="button" class="menuBtn" data-type="tiramisu">Tiramisu</button>
+          <button type="button" class="menuBtn" data-type="gelato">Gelato</button>
+        </div>
+      </div>
+
+      <!-- VARIANT -->
+      <div class="group">
+        <label>Choose Variant</label>
+        <select id="variant">
+          <option value="">Select menu first</option>
+        </select>
+      </div>
+
+      <!-- CART -->
+      <div class="group">
+        <label>Your Order</label>
+        <div id="cart"><p class="empty">No order yet</p></div>
+        <button type="button" id="addBtn" class="addBtn">Add To Cart</button>
+        <span class="error-msg" id="cartError"></span>
+      </div>
+
+      <!-- DELIVERY -->
+      <div class="group">
+        <label>Delivery Option</label>
+        <div class="deliveryOptions">
+          <label class="radioBox"><input type="radio" name="delivery" value="pickup">Pick Up</label>
+          <label class="radioBox"><input type="radio" name="delivery" value="delivery">Delivery</label>
+        </div>
+        <span class="error-msg" id="deliveryError"></span>
+
+        <!-- PICKUP INFO -->
+        <div id="pickupInfo" class="pickupBox">
+          <p><strong>Pick-up Location</strong></p>
+          <p>27 Via Castello Antico, Montalcino, Tuscany 53024, Italy</p>
+          <p><strong>Opening Hours</strong></p>
+          <p>Monday–Friday, 11:00 AM – 11:00 PM<br>Saturday–Sunday, 10:00 AM – 9:00 PM</p>
+        </div>
+
+        <!-- ADDRESS (muncul saat Delivery dipilih) -->
+        <div id="addressGroup" class="addressGroup">
+          <label for="address">Delivery Address</label>
+          <input type="text" id="address" placeholder="Enter your full delivery address">
+          <span class="error-msg" id="addressError"></span>
+        </div>
+      </div>
+
+      <!-- PAYMENT -->
+      <div class="group">
+        <label>Payment Method</label>
+        <div class="paymentOptions">
+          <label class="radioBox"><input type="radio" name="payment" value="cash">Cash</label>
+          <label class="radioBox"><input type="radio" name="payment" value="card">Debit / Credit</label>
+          <label class="radioBox"><input type="radio" name="payment" value="ewallet">E-Wallet</label>
+        </div>
+        <span class="error-msg" id="paymentError"></span>
+      </div>
+
+      <!-- NOTES -->
+      <div class="group">
+        <label>Notes</label>
+        <textarea id="notes" placeholder="Extra cheese, no onions..."></textarea>
+      </div>
+
+      <button type="submit" class="submitBtn">Confirm Order</button>
+
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="footer-copy">© 2025 Mamma Mia Ristorante.</span>
+    <address class="footer-contact">
+      <span>📞 +1 (212) 847-3301</span>
+      <span>✉️ hello@mammamiaristorante.com</span>
+      <span>📍 Florence, Italy</span>
+    </address>
+  </footer>
+
+</div>
+<script src="validation.js"></script>
+</body>
+</html>

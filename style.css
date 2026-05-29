@@ -1,0 +1,173 @@
+/* =============================================
+   style.css — Shared Styles
+   Mamma Mia Ristorante
+   ============================================= */
+
+/* ----- RESET ----- */
+html { line-height: 1.15; scroll-behavior: smooth; }
+body { margin: 0; background-color: transparent; }
+* { box-sizing: border-box; border-width: 0; border-style: solid; -webkit-font-smoothing: antialiased; }
+p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption { margin: 0; padding: 0; }
+button { background-color: transparent; }
+button, input, optgroup, select, textarea { font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0; }
+a { color: inherit; text-decoration: inherit; }
+img { display: block; }
+
+/* ----- BASE ----- */
+html {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ----- PAGE WRAPPER ----- */
+.page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Inter, sans-serif;
+}
+
+/* ----- NAVBAR ----- */
+.navbar {
+  width: 100%;
+  background-color: #e7e4dd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  width: 60px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.navbar-title {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Inter, sans-serif;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Inter, sans-serif;
+  padding: 8px 12px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #8c0000;
+}
+
+.nav-link-active {
+  color: #8c0000;
+}
+
+.nav-btn {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Inter, sans-serif;
+  padding: 8px 20px;
+  background-color: #8c0000;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #6a0000;
+}
+
+/* ----- FOOTER ----- */
+.footer {
+  background-color: #e7e4dd;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.footer-copy {
+  color: #000000;
+  font-size: 16px;
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-style: normal;
+  color: #000000;
+  font-size: 14px;
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+}
+
+.footer-email {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* =============================================
+   RESPONSIVE — below 768px
+   ============================================= */
+@media screen and (max-width: 768px) {
+  .navbar-inner {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 16px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .nav-link,
+  .nav-btn {
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

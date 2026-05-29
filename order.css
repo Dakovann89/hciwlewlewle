@@ -1,0 +1,137 @@
+/* =============================================
+   order.css — Order Page Styles
+   Mamma Mia Ristorante
+   ============================================= */
+
+body { margin: 0; color: white; font-family: Inter, sans-serif; }
+
+/* BACKGROUND IMAGE */
+.page-wrapper {
+  background-image: url("orderbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* OVERLAY */
+.page-wrapper::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 0, 0, 0.65);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Semua konten di atas overlay */
+.navbar, .hero, .form-section { position: relative; z-index: 1; }
+
+/* HERO */
+.hero { padding: 180px 0 70px; text-align: center; }
+.hero h1 { font-size: 60px; margin-bottom: 10px; font-family: "Inria Serif", serif; }
+.hero p  { font-size: 18px; }
+
+/* FORM SECTION */
+.form-section { display: flex; justify-content: center; padding: 0 20px 100px; }
+
+/* Form card */
+form {
+  width: 100%; max-width: 700px;
+  background: #FFFCF7;
+  color: #2b0000;
+  padding: 40px; border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* GROUP */
+.group { margin-bottom: 25px; }
+label  { display: block; margin-bottom: 10px; font-size: 18px; color: #2b0000; }
+input, select, textarea {
+  width: 100%; padding: 14px;
+  border: 1.5px solid #d9c9a8;
+  border-radius: 10px; font-size: 16px;
+  box-sizing: border-box;
+  background: #fff; color: #2b0000;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none; border-color: #8b0000;
+}
+textarea { min-height: 100px; }
+
+/* BUTTONS */
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.menuBtn, .addBtn, .submitBtn, .qtyBtn {
+  border: none; background: #8b0000; color: white;
+  padding: 12px 18px; border-radius: 10px; cursor: pointer;
+}
+.menuBtn.active     { background: #c40000; }
+.addBtn, .submitBtn { width: 100%; margin-top: 15px; }
+
+/* CART */
+#cart { display: flex; flex-direction: column; gap: 15px; }
+.cartItem {
+  background: #f5ede0; color: #2b0000; padding: 15px; border-radius: 12px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.cartRight { display: flex; align-items: center; gap: 10px; }
+.empty { opacity: 0.5; }
+
+/* DELIVERY / PAYMENT */
+.deliveryOptions, .paymentOptions { display: flex; gap: 15px; flex-wrap: wrap; }
+.radioBox {
+  background: #f5ede0; color: #2b0000; padding: 12px 18px; border-radius: 10px;
+  display: flex; align-items: center; gap: 8px; cursor: pointer;
+}
+.pickupBox {
+  display: none; margin-top: 15px; background: #f5ede0; color: #2b0000;
+  padding: 18px; border-radius: 12px; line-height: 1.7;
+}
+
+/* ADDRESS */
+.addressGroup { display: none; margin-top: 15px; }
+.addressGroup label { font-size: 16px; margin-bottom: 8px; }
+
+/* ERROR */
+.error-msg { display: block; color: #c0392b; font-size: 13px; margin-top: 6px; min-height: 18px; }
+
+/* FOOTER */
+.footer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 40px;
+  background: #e7e4dd;
+  font-size: 14px;
+  color: #000000;
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+}
+
+.footer-copy {
+  color: #000000;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-style: normal;
+  color: #000000;
+}
+
+.footer-email {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .hero h1 { font-size: 40px; }
+  form { padding: 25px; }
+  .footer { flex-direction: column; align-items: flex-start; }
+}

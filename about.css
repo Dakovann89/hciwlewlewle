@@ -1,0 +1,130 @@
+/* =============================================
+   about.css — About Us Page Styles
+   Mamma Mia Ristorante
+   ============================================= */
+
+/* ----- ABOUT HERO ----- */
+.about-hero {
+  background-color: #ffffff;
+  padding: 60px 24px 40px;
+  text-align: center;
+}
+
+.about-hero-title {
+  color: #000000;
+  font-size: 96px;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+/* ----- SECTIONS ----- */
+.about-section {
+  background-color: #ffffff;
+  padding: 60px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-section-alt {
+  background-color: #f9f7f3;
+  max-width: 1100px;
+  padding: 60px 24px;
+}
+
+.about-section-title {
+  color: #000000;
+  font-size: 40px;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-text p {
+  color: #000000;
+  font-size: 20px;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ----- FOUNDERS ----- */
+.about-founders {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1300px;
+  padding: 60px 60px;
+}
+
+.founders-text {
+  flex: 1;
+}
+
+.founders-text .about-section-title {
+  text-align: left;
+}
+
+.founders-text .about-text p {
+  text-align: left;
+}
+
+.founders-img-wrap {
+  flex-shrink: 0;
+  width: 420px;
+}
+
+.founders-img {
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* =============================================
+   RESPONSIVE — below 768px
+   ============================================= */
+@media screen and (max-width: 768px) {
+  .about-hero-title {
+    font-size: 56px;
+  }
+
+  .about-section-title {
+    font-size: 28px;
+  }
+
+  .about-text p {
+    font-size: 17px;
+  }
+
+  .about-founders {
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 32px;
+  }
+
+  .founders-text .about-section-title {
+    text-align: center;
+  }
+
+  .founders-text .about-text p {
+    text-align: center;
+  }
+
+  .founders-img-wrap {
+    width: 100%;
+  }
+
+  .founders-img {
+    height: 320px;
+  }
+}

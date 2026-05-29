@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Menu - Mamma Mia Ristorante" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <title>Menu - Mamma Mia Ristorante</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Italianno&family=Italiana&family=Instrument+Serif:ital@0;1&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,400&display=swap" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./menu.css" />
+  </head>
+  <body>
+    <div class="page-wrapper menu-page">
+
+      <!-- NAVBAR -->
+      <header class="navbar">
+        <div class="navbar-inner">
+          <div class="navbar-brand">
+            <img src="logo.png" alt="Mamma Mia Logo" class="navbar-logo" />
+            <span class="navbar-title">Mamma Mia</span>
+          </div>
+          <nav class="navbar-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="menu.html" class="nav-link nav-link-active">Menu</a>
+            <a href="rewards.html" class="nav-link">Rewards</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="order.html" class="nav-btn">Order</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- PAGE TITLE -->
+      <section class="menu-hero">
+        <h1 class="menu-hero-title">Our Menu</h1>
+      </section>
+
+      <!-- MENU GRID -->
+      <div class="menu-grid">
+
+        <!-- PIZZA -->
+        <div class="menu-img-cell">
+          <img src="menupizza.jpg" alt="Pizza" class="menu-cell-img" />
+        </div>
+        <div class="menu-text-cell menu-dark-red">
+          <h2 class="menu-category-title">Pizza</h2>
+          <div class="menu-items">
+            <div class="menu-item">
+              <p class="menu-item-name">Pizza Margherita</p>
+              <p class="menu-item-desc">Classic Neapolitan pizza with San Marzano tomato sauce, fresh mozzarella, and basil, baked in a wood-fired oven.</p>
+              <p class="menu-item-price">$14.99</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Pizza Diavola</p>
+              <p class="menu-item-desc">A fiery pizza topped with spicy salami, tomato sauce, and melted mozzarella for those who love a little heat.</p>
+              <p class="menu-item-price">$16.99</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Pizza Quattro Formaggi</p>
+              <p class="menu-item-desc">A rich and indulgent pizza layered with four Italian cheeses: mozzarella, gorgonzola, fontina, and Parmigiano-Reggiano.</p>
+              <p class="menu-item-price">$17.99</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PASTA -->
+        <div class="menu-text-cell menu-dark-olive">
+          <h2 class="menu-category-title">Pasta</h2>
+          <div class="menu-items">
+            <div class="menu-item">
+              <p class="menu-item-name">Penne al Ragù</p>
+              <p class="menu-item-desc">Al dente penne tossed in a rich, slow-simmered Bolognese meat sauce, finished with aged Parmigiano-Reggiano.</p>
+              <p class="menu-item-price">$17.99</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Spaghetti Carbonara</p>
+              <p class="menu-item-desc">Silky spaghetti coated in a creamy egg and Pecorino Romano sauce, topped with crispy guanciale and black pepper.</p>
+              <p class="menu-item-price">$16.99</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Penne all'Arrabbiata</p>
+              <p class="menu-item-desc">Penne pasta in a bold, spicy tomato sauce made with garlic and red chili flakes, finished with fresh parsley.</p>
+              <p class="menu-item-price">$14.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-img-cell">
+          <img src="menupasta.jpg" alt="Pasta" class="menu-cell-img" />
+        </div>
+
+        <!-- TIRAMISU -->
+        <div class="menu-img-cell">
+          <img src="menutiramisu.jpg" alt="Tiramisu" class="menu-cell-img" />
+        </div>
+        <div class="menu-text-cell menu-dark-red">
+          <h2 class="menu-category-title">Tiramisu</h2>
+          <div class="menu-items">
+            <div class="menu-item">
+              <p class="menu-item-name">Classic Tiramisu</p>
+              <p class="menu-item-desc">Espresso-soaked ladyfingers layered with whipped mascarpone cream and dusted with fine cocoa powder.</p>
+              <p class="menu-item-price">$8.99</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Tiramisu al Pistacchio</p>
+              <p class="menu-item-desc">A Sicilian twist on the classic, featuring pistachio cream and crushed pistachios layered between mascarpone and ladyfingers.</p>
+              <p class="menu-item-price">$9.99</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Tiramisu al Cioccolato</p>
+              <p class="menu-item-desc">A chocolate lover's dream — layers of dark chocolate ganache, mascarpone cream, and cocoa-dusted ladyfingers.</p>
+              <p class="menu-item-price">$9.99</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- GELATO -->
+        <div class="menu-text-cell menu-dark-olive">
+          <h2 class="menu-category-title">Gelato</h2>
+          <div class="menu-items">
+            <div class="menu-item">
+              <p class="menu-item-name">Gelato al Pistacchio</p>
+              <p class="menu-item-desc">Creamy handcrafted pistachio gelato made with Sicilian pistachios, rich in flavor and naturally vibrant in color.</p>
+              <p class="menu-item-price">$6.99</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Gelato al Cioccolato</p>
+              <p class="menu-item-desc">Velvety dark chocolate gelato made with premium cocoa, intensely rich and smooth with every scoop.</p>
+              <p class="menu-item-price">$6.99</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Gelato alla Fragola</p>
+              <p class="menu-item-desc">Fresh strawberry gelato bursting with the natural sweetness of sun-ripened Italian strawberries.</p>
+              <p class="menu-item-price">$6.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-img-cell">
+          <img src="menugelato.jpg" alt="Gelato" class="menu-cell-img" />
+        </div>
+
+      </div>
+
+      <!-- ORDER CTA -->
+      <section class="menu-cta">
+        <h2 class="menu-cta-title">Place Your Order Now!</h2>
+        <a href="order.html" class="menu-cta-btn">Order Now</a>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <span class="footer-copy">© 2025 Mamma Mia Ristorante. All rights reserved.</span>
+        <address class="footer-contact">
+          <span>📞 +1 (212) 847-3301</span>
+          <span>✉️ <a href="mailto:hello@mammamiaristorante.com" class="footer-email">hello@mammamiaristorante.com</a></span>
+          <span>📍 14 Via della Vigna Nuova, Florence, Tuscany 50123, Italy</span>
+        </address>
+      </footer>
+
+    </div>
+  </body>
+</html>

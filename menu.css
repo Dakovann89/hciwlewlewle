@@ -1,0 +1,205 @@
+/* =============================================
+   menu.css — Menu Page Styles
+   Mamma Mia Ristorante
+   ============================================= */
+
+/* ----- PAGE ----- */
+.menu-page {
+  background-color: #ffffff;
+}
+
+/* ----- HERO ----- */
+.menu-hero {
+  background-color: #ffffff;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-hero-title {
+  color: #000000;
+  font-size: 40px;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+}
+
+/* =============================================
+   MENU GRID
+   ============================================= */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+/* ----- IMAGE SIDE ----- */
+
+.menu-img-cell {
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.menu-cell-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.menu-img-cell:hover .menu-cell-img {
+  transform: scale(1.05);
+}
+
+/* ----- TEXT SIDE ----- */
+
+.menu-text-cell {
+  min-height: 520px;
+  padding: 60px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+}
+
+.menu-dark-red {
+  background-color: #320000;
+}
+
+.menu-dark-olive {
+  background-color: #3a2e00;
+}
+
+/* ----- TITLE ----- */
+
+.menu-category-title {
+  color: #ffffff;
+  font-size: 56px;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ----- ITEMS ----- */
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item-name {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.menu-item-desc {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 18px;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.menu-item-price {
+  color: #f0c080;
+  font-size: 20px;
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+}
+
+/* ----- ORDER CTA ----- */
+.menu-cta {
+  background-color: #ffffff;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.menu-cta-title {
+  color: #000000;
+  font-size: 40px;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+}
+
+.menu-cta-btn {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: Inter, sans-serif;
+  padding: 16px 40px;
+  background-color: #7d0000;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  display: inline-block;
+}
+
+.menu-cta-btn:hover {
+  background-color: #5c0000;
+}
+
+/* =============================================
+   RESPONSIVE — below 768px
+   ============================================= */
+@media screen and (max-width: 768px) {
+  .menu-hero {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-img-cell {
+    min-height: 280px;
+  }
+
+  .menu-text-cell {
+    min-height: auto;
+    padding: 40px 24px;
+  }
+
+  .menu-category-title {
+    font-size: 40px;
+  }
+
+  .menu-item-name {
+    font-size: 18px;
+  }
+
+  .menu-item-desc {
+    font-size: 16px;
+  }
+
+  .menu-item-price {
+    font-size: 18px;
+  }
+
+  .menu-cta {
+    height: auto;
+    padding: 48px 24px;
+  }
+
+  .menu-cta-title {
+    font-size: 28px;
+  }
+}
